@@ -7,7 +7,7 @@ name: Cross-compile
 
 jobs:
   build:
-    name: Build %{{matrix.target}}
+    name: Build
     runs-on: ubuntu-latest
     strategy:
       matrix:
