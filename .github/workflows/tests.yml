@@ -15,6 +15,8 @@ jobs:
           - x86_64-unknown-linux-gnu
           - x86_64-apple-darwin
     steps:
+      - name: Install Sound
+        run: apt-get install libasound2-dev
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
         with:
